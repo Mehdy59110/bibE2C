@@ -1,0 +1,235 @@
+/*Réglages généraux*/
+@font-face {
+    font-family: "police-titre";
+    src: url("./exmouth_.ttf");
+}
+
+@font-face {
+    font-family: "base";
+    src: url("./CaviarDreams.ttf");
+}
+
+* {
+    /*Supprimer toutes les marges par défauts pour ne pas être embété*/
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+
+    /*palette de couleur*/
+    --couleur-claire:#E6D6E8 ;
+    --couleur-midclaire: #BED3C3;
+    --couleur-midfonce: #4A919E;
+    --couleur-fonce:#212E53 ;
+
+    /*palette alternative
+    --couleur-claire:#dcc4a2 ;
+    --couleur-midclaire: #b4442a;
+    --couleur-midfonce: #513533;
+    --couleur-fonce:#2f1b27 ;
+    */
+
+}
+
+body {
+    font-family: "base";
+    background-color: var(--couleur-claire);
+    color:var(--couleur-fonce);
+}
+
+/*réglage de la partie nav */
+#logo {
+    width : 7%;
+    display: block;
+}
+/*réglage de la partie header */
+header {
+    position: relative;
+    top: 10vmin;
+    background:radial-gradient(circle at 25%, var(--couleur-midfonce),var(--couleur-fonce));
+    color:var(--couleur-claire);
+    height: 25vh;
+    padding : 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+
+h1 {
+    font-family: "police-titre";
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+h2{
+margin-bottom: 5px;
+}
+
+nav {
+    position: fixed;
+    height: 10vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: solid var(--couleur-midfonce) 1px;
+
+    width: 100vw;
+    background-color: var(--couleur-claire);
+    z-index: 10;
+}
+
+#nav-bar {
+    width : 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.nav-button {
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+
+    background-color: var(--couleur-fonce);
+    color: var(--couleur-claire);
+    padding: 5px;
+
+    width : 15%;
+    margin : 5px;
+
+    text-align: center;
+    border-radius: 5px;position: background-color 500ms, color 1000ms, border 1000ms;
+
+}
+
+.nav-button:hover {
+    background-color: var(--couleur-midclaire);
+    color: var(--couleur-midfonce);
+    border: solid var(--couleur-midfonce) 2px;
+}
+
+/*réglage de la partie main et aside*/
+p{
+font-size: 1.5rem;
+margin-bottom: 5px;
+}
+
+
+#rangement {
+    position: relative;
+    top: 10vmin;
+    width : 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
+}
+
+main {
+    width: 85%;
+}
+
+article {
+    box-shadow: var(--couleur-fonce) 2px 2px 5px 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 1000ms;
+}
+article:hover{
+    transform: translate3d(2vh, 2vh, 0)
+}
+/*réglage article 1*/
+#text1-contenant{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: stretch;
+}
+
+#text1 {
+width: 40%;
+}
+
+iframe{
+    display: block;
+    width: 40%;
+    border-radius: 20px;
+}
+
+aside {
+    position: fixed;
+    top: 10vmin;
+    width : 15%;
+    right: 10px;
+
+}
+
+/*image et video */
+
+#video-e2c {
+    max-width: 100%;    
+}
+
+#lecture {
+    max-width: 100%;
+    float: right;
+    width: 25%;
+}
+
+#prepa-num {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+#festnum {
+    max-width: 100%;
+}
+
+aside>article{
+    padding: 15px;
+    background-color: var(--couleur-fonce);
+    color: var(--couleur-claire);
+    border: solid var(--couleur-midclaire);
+    border-radius: 15px;
+}
+/*design fou fou*/
+
+
+.intertext{
+    width: 100%;
+    aspect-ratio: 1904/640;
+    background-image: url(../src/bib2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: 20vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.intertext2{
+     width: 100%;
+     aspect-ratio: 1904/640;
+    background-image: url(../src/bib1.png);
+     background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: 20vh;
+}
+h4{
+    font-size: 4rem;
+    font-family: "police titre";
+    color: var(--couleur-midclaire);
+    margin-right: 30px;
+}
