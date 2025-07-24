@@ -10,18 +10,10 @@
 </head>
 <body>
     <!-- Zone du menu, en haut de la page-->
-    <nav>
-
-        <img id="logo" src="../src/logo2.png" alt="Logo E2C">
-        <div id="nav-bar">
-            <a class="nav-button" href="../controller/homeController.php">Accueil</a>
-            <a class="nav-button" href="../controller/libraryController.php">Bibliothèque</a>
-            <a class="nav-button" href="../controller/gameController.php">Détente</a>
-        </div>
-
-    </nav>
+    
     <!-- En tête stylé-->
    <?php
+    require_once('../view/_partials/_nav.php');
     require_once('../view/_partials/_header.php');
    ?>
     <!-- Zone peincipale - présentation de l'e2c et de Silence, On lit-->
