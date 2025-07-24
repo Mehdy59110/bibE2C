@@ -6,7 +6,7 @@
     <title>Bibliothèque E2C</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../src/logo.png">
-    <script src="../script/test.js"></script>
+     <script src="../script/test.js" defer></script>
 </head>
 <body>
     <!-- Zone du menu, en haut de la page-->
@@ -20,14 +20,30 @@
         </div>
 
     </nav>
-    <!-- En tête stylé-->
-    <header>
-        <h1>Des livres et des histoires!</h1>
-        
 
-        <h3>La Bibliothèque de l'E2C de Roubaix</h3>
-    </header>
-    <!-- Zone peincipale ->
+    <?php
+    require_once('../view/_partials/_header.php');
+    ?>
+
+    <!-- En tête stylé
+    <?php
+    require_once('../view/_partials/_header.php');
+   ?>
+    Zone peincipale -->
+     <div id="main-game">
+        <div id="user-interface">
+            <div>
+            <label for="user-number">entrez un nombre entre 1 et 100</label>
+           
+           <input id="user-number" type="number" min="1" max="100" placeholder=" mettez votre numero ici">
+           </div>
+           <input id="send-button" type="submit" value="proposer">
+        </div>
+        <div id="game-display">
+
+        </div>
+
+     </div>
    
 </body>
 </html>
